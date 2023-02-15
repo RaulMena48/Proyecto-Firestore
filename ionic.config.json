@@ -1,0 +1,7 @@
+{
+  "name": "ionicAlimentos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
