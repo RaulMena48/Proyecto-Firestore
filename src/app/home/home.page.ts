@@ -17,13 +17,12 @@ export class HomePage {
     data: {} as Alimento
   }];
 
-  constructor(private firestoreService: FirestoreService, private router: Router) {
+  constructor(private firestoreService: FirestoreService, private router:Router) {
   
     this.alimentoEditando = {} as Alimento;
 
     this.obtenerListaAlimentos();
   }
-
   clickBotonInsertar() {this.router.navigate(['/detalle', "nuevo"]);}
 
   obtenerListaAlimentos() {

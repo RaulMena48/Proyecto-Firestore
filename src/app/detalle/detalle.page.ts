@@ -7,6 +7,7 @@ import { ToastController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
 import { ImagePicker } from '@awesome-cordova-plugins/image-picker/ngx';
+import { SocialSharing } from '@awesome-cordova-plugins/social-sharing/ngx';
 
 @Component({
   selector: 'app-detalle',
@@ -32,7 +33,7 @@ export class DetallePage implements OnInit {
 
     private alertController: AlertController,
     private toastController: ToastController,
-    private imagePicker: ImagePicker
+    private imagePicker: ImagePicker,
   ) { }
 
 
@@ -190,11 +191,11 @@ export class DetallePage implements OnInit {
 
     this.firestoreService.deleteFileFromURL(fileURL)
       .then(() => {
-
         toast.present();
       }, (err) => {
         console.log(err)
-
       });
   }
+
+
 }

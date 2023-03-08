@@ -27,5 +27,20 @@
     <ion-button class="boton" fill="clear" *ngIf="(!this.nuevo)" (click)="clicBotonModificar()">Modificar</ion-button>
     <ion-button class="boton" fill="clear" *ngIf="(this.nuevo)" (click)="clickBotonInsertar()">Guardar</ion-button>
     <ion-button class="boton" fill="clear" *ngIf="(!this.nuevo)" (click)="uploadImagePicker()"> Imagen </ion-button>
+    
   </ion-card>
 </ion-content>
+<ion-toolbar>
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        HOME 
+      </ion-tab-button>
+      <ion-tab-button tab="recetas">
+        RECETAS
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
